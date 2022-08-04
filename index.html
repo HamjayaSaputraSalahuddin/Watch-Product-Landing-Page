@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto&amp;display=swap'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player Project</title>
+</head>
+<body>
+    <div class="player">
+        <div class="cover">
+            <img src="/Assets/296082645_573095060947653_420282291609704166_n.jpg" alt="">
+
+        </div>
+        <div class="info">
+            <div class="title">Gyutto</div>
+            <div class="singer">Mosawo</div>
+        </div>
+
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" max="100" onclick="handleSeekBar()">
+            <audio class="music-element">
+                <source src="./Assets/Gyutto.mp3" type="audio/mp3">
+            </audio>
+
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrows</i>
+            </span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
